@@ -1,10 +1,4 @@
-Przepraszam za wcześniejsze nieporozumienie! Oto w pełni scalony **README.md** w jednym bloku, który możesz **skopiować, wkleić i od razu używać** jako gotowy plik:
-
----
-
-```markdown
-# Gist Application - Gaming Edition
-
+# Gist Manager
 **Interaktywny program desktopowy / Interactive desktop application**  
 🇵🇱 Umożliwia łatwe tworzenie i zarządzanie GitHub Gistami za pomocą prostego interfejsu graficznego.  
 🇬🇧 Enables easy creation and management of GitHub Gists through a simple graphical interface.  
