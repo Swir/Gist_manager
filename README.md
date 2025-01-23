@@ -92,10 +92,4 @@
 
 ---
 
-## Licencja / License  
 
-🇵🇱 Program udostępniany na licencji MIT.  
-🇬🇧 The program is provided under the MIT license.  
-```
-
----
