@@ -2,82 +2,73 @@
 
 # 🗂️ Gist Manager
 
-**Desktop GitHub Gist creator and manager with a graphical interface**  
-**Desktopowy kreator i menedżer GitHub Gist z interfejsem graficznym**
+### Desktop GitHub Gist Creator & Manager with PyQt5
+
+**Python • PyQt5 • GitHub API • File/Folder Upload • Themes**
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
 ![PyQt5](https://img.shields.io/badge/GUI-PyQt5-41CD52?logo=qt&logoColor=white)
-![GitHub](https://img.shields.io/badge/API-GitHub-181717?logo=github)
-![Author](https://img.shields.io/badge/Author-Swir-ff4fa3)
+![GitHub](https://img.shields.io/badge/API-GitHub-181717?logo=github&logoColor=white)
+![Themes](https://img.shields.io/badge/Themes-Dark%20%7C%20Light%20%7C%20Ubuntu%20%7C%20Solarized-ff4fa3)
 
 </div>
 
 ---
 
-## 🇬🇧 English
+## 🚀 About
 
-Gist Manager is a Python desktop application that provides a convenient GUI for creating and managing GitHub Gists without working directly in the browser. It supports files and folders, Gist browsing, link copying, deletion and several visual themes.
+**Gist Manager** is a Python desktop application for creating and managing GitHub Gists without doing every operation manually in the browser. It can create Gists from files or folders, browse existing Gists, copy links and delete selected entries from a PyQt5 interface.
 
-### ✨ Features
-- create Gists from files or folders
-- browse existing Gists
-- copy generated Gist links
-- delete selected Gists
-- GitHub token support with local persistence/reset
-- multiple UI themes: Dark, Light, Ubuntu and Solarized variants
-- PyQt5 desktop interface
+It is designed for users searching for a **GitHub Gist manager**, **Gist GUI**, **Python GitHub API tool**, **desktop Gist creator** or a graphical utility for managing snippets and small files.
 
-### 🛠 Requirements
-- Python 3.8+
-- PyQt5
-- requests
-- GitHub token with appropriate Gist permissions
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 📄 File → Gist | Create a Gist from a selected file |
+| 📁 Folder support | Build Gists from folder content |
+| 🗂️ Gist browser | View existing Gists |
+| 🔗 Copy link | Copy generated Gist URLs |
+| 🗑️ Delete | Remove selected Gists |
+| 🔑 Token support | Authenticate with a GitHub token |
+| ♻️ Token reset | Clear/reset locally stored token data |
+| 🎨 Themes | Dark, Light, Ubuntu and Solarized variants |
+
+---
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/Swir/Gist_manager.git
+cd Gist_manager
 pip install PyQt5 requests
 python GistApp.py
 ```
 
-### 🔐 Token safety
-Treat GitHub access tokens like passwords. Use only the permissions required by the application and never commit a token to a public repository.
+---
+
+## 🔐 Token Safety
+
+Treat GitHub access tokens like passwords. Use only the permissions required for Gist operations, keep tokens out of public source code and revoke them if they are ever exposed.
 
 ---
 
-## 🇵🇱 Polski
+## 🔍 Discoverability
 
-Gist Manager to desktopowa aplikacja w Pythonie zapewniająca wygodny interfejs do tworzenia i zarządzania GitHub Gist bez konieczności wykonywania wszystkich operacji ręcznie w przeglądarce. Program obsługuje pliki i foldery, przeglądanie Gistów, kopiowanie linków, usuwanie oraz kilka motywów graficznych.
-
-### ✨ Funkcje
-- tworzenie Gistów z plików lub folderów
-- przeglądanie istniejących Gistów
-- kopiowanie wygenerowanych linków
-- usuwanie wybranych Gistów
-- obsługa tokenu GitHub z możliwością resetowania
-- motywy Dark, Light, Ubuntu oraz Solarized
-- interfejs desktopowy PyQt5
-
-### 🛠 Wymagania
-- Python 3.8+
-- PyQt5
-- requests
-- token GitHub z odpowiednimi uprawnieniami do Gist
-
-```bash
-pip install PyQt5 requests
-python GistApp.py
-```
-
-### 🔐 Bezpieczeństwo tokenu
-Token GitHub traktuj jak hasło. Nadawaj wyłącznie potrzebne uprawnienia i nigdy nie umieszczaj tokenu w publicznym repozytorium.
+`github gist manager` • `gist gui python` • `github gist desktop app` • `python github api gui` • `gist creator python` • `manage github gists` • `pyqt5 github tool`
 
 ---
 
-## 📁 Structure / Struktura
-```text
-Gist_manager/
-├── GistApp.py
-└── README.md
-```
+## 👨‍💻 Author
 
-## 👤 Author / Autor
-Developed by **Swir**.
+Developed by **Swir** — [@Swir](https://github.com/Swir)
+
+<div align="center">
+
+### 🗂️ Create • Browse • Copy • Manage
+
+⭐ **Star the repository if it improves your Gist workflow!**
+
+</div>
