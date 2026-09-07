@@ -1,95 +1,83 @@
-# Gist Manager
-**Interaktywny program desktopowy / Interactive desktop application**  
-🇵🇱 Umożliwia łatwe tworzenie i zarządzanie GitHub Gistami za pomocą prostego interfejsu graficznego.  
-🇬🇧 Enables easy creation and management of GitHub Gists through a simple graphical interface.  
+<div align="center">
+
+# 🗂️ Gist Manager
+
+**Desktop GitHub Gist creator and manager with a graphical interface**  
+**Desktopowy kreator i menedżer GitHub Gist z interfejsem graficznym**
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
+![PyQt5](https://img.shields.io/badge/GUI-PyQt5-41CD52?logo=qt&logoColor=white)
+![GitHub](https://img.shields.io/badge/API-GitHub-181717?logo=github)
+![Author](https://img.shields.io/badge/Author-Swir-ff4fa3)
+
+</div>
 
 ---
 
-## Opis i Funkcje / Description and Features
+## 🇬🇧 English
 
-🇵🇱 **Funkcje programu**:  
-- Tworzenie nowych Gistów z plików lub folderów.  
-- Zarządzanie istniejącymi Gistami: przeglądanie, kopiowanie linków, usuwanie.  
-- Obsługa tokenów GitHuba – zapamiętywanie i możliwość resetowania.  
-- Personalizacja wyglądu dzięki różnym motywom (Dark, Light, Ubuntu, Solarized).  
+Gist Manager is a Python desktop application that provides a convenient GUI for creating and managing GitHub Gists without working directly in the browser. It supports files and folders, Gist browsing, link copying, deletion and several visual themes.
 
-🇬🇧 **Features of the program**:  
-- Create new Gists from files or folders.  
-- Manage existing Gists: browse, copy links, delete.  
-- Support for GitHub tokens – save and reset options.  
-- Customize the appearance with various themes (Dark, Light, Ubuntu, Solarized).  
+### ✨ Features
+- create Gists from files or folders
+- browse existing Gists
+- copy generated Gist links
+- delete selected Gists
+- GitHub token support with local persistence/reset
+- multiple UI themes: Dark, Light, Ubuntu and Solarized variants
+- PyQt5 desktop interface
 
----
+### 🛠 Requirements
+- Python 3.8+
+- PyQt5
+- requests
+- GitHub token with appropriate Gist permissions
 
-## Wymagania i Instalacja / Requirements and Installation
+```bash
+pip install PyQt5 requests
+python GistApp.py
+```
 
-🇵🇱 **Wymagania**:  
-- Python 3.8 lub nowszy.  
-- Biblioteki:  
-  ```bash
-  pip install PyQt5 requests
-  ```
-- Token GitHuba z uprawnieniami `gist`.  
-
-🇬🇧 **Requirements**:  
-- Python 3.8 or newer.  
-- Libraries:  
-  ```bash
-  pip install PyQt5 requests
-  ```
-- A GitHub Personal Access Token with `gist` permissions.  
-
-🇵🇱 **Instalacja i uruchomienie**:  
-1. Pobierz kod źródłowy i zapisz jako `GistApp.py`.  
-2. Zainstaluj wymagane biblioteki za pomocą polecenia:  
-   ```bash
-   pip install PyQt5 requests
-   ```
-3. Uruchom program:  
-   ```bash
-   python GistApp.py
-   ```  
-
-🇬🇧 **Installation and launch**:  
-1. Download the source code and save it as `GistApp.py`.  
-2. Install the required libraries using the command:  
-   ```bash
-   pip install PyQt5 requests
-   ```
-3. Run the program:  
-   ```bash
-   python GistApp.py
-   ```  
+### 🔐 Token safety
+Treat GitHub access tokens like passwords. Use only the permissions required by the application and never commit a token to a public repository.
 
 ---
 
-## Jak działa? / How does it work?
+## 🇵🇱 Polski
 
-### Token GitHuba / GitHub Token  
-🇵🇱 Przy pierwszym uruchomieniu program poprosi o Personal Access Token, który zostanie zapisany lokalnie. Token można zresetować w menu „Settings”.  
-🇬🇧 On the first run, the program will ask for a Personal Access Token, which will be saved locally. The token can be reset via the "Settings" menu.  
+Gist Manager to desktopowa aplikacja w Pythonie zapewniająca wygodny interfejs do tworzenia i zarządzania GitHub Gist bez konieczności wykonywania wszystkich operacji ręcznie w przeglądarce. Program obsługuje pliki i foldery, przeglądanie Gistów, kopiowanie linków, usuwanie oraz kilka motywów graficznych.
 
-### Tworzenie Gistów / Creating Gists  
-🇵🇱 W zakładce „Creator” wybierz plik lub folder, podaj opis i wygeneruj linki do Gistów.  
-🇬🇧 In the "Creator" tab, select a file or folder, provide a description, and generate Gist links.  
+### ✨ Funkcje
+- tworzenie Gistów z plików lub folderów
+- przeglądanie istniejących Gistów
+- kopiowanie wygenerowanych linków
+- usuwanie wybranych Gistów
+- obsługa tokenu GitHub z możliwością resetowania
+- motywy Dark, Light, Ubuntu oraz Solarized
+- interfejs desktopowy PyQt5
 
-### Zarządzanie Gistami / Managing Gists  
-🇵🇱 W zakładce „Manager” możesz przeglądać, kopiować linki i usuwać wybrane Gisty.  
-🇬🇧 In the "Manager" tab, you can browse, copy links, and delete selected Gists.  
+### 🛠 Wymagania
+- Python 3.8+
+- PyQt5
+- requests
+- token GitHub z odpowiednimi uprawnieniami do Gist
+
+```bash
+pip install PyQt5 requests
+python GistApp.py
+```
+
+### 🔐 Bezpieczeństwo tokenu
+Token GitHub traktuj jak hasło. Nadawaj wyłącznie potrzebne uprawnienia i nigdy nie umieszczaj tokenu w publicznym repozytorium.
 
 ---
 
-## Motywy / Themes  
+## 📁 Structure / Struktura
+```text
+Gist_manager/
+├── GistApp.py
+└── README.md
+```
 
-🇵🇱 Dostępne motywy:  
-🇬🇧 Available themes:  
-
-- **Dark**  
-- **Light**  
-- **Ubuntu**  
-- **SolarizedDark**  
-- **SolarizedLight**  
-
----
-
-
+## 👤 Author / Autor
+Developed by **Swir**.
