@@ -1,3 +1,4 @@
+import sys
 from pathlib import Path
 
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -7,6 +8,14 @@ from .config import APP_NAME, APP_VERSION, GITHUB_PROFILE, THEMES
 from .creator import CreatorPage
 from .manager import ManagerPage
 from .style import theme_css
+
+
+def resource_path(relative_path):
+    """Return a path that works from source and from a PyInstaller bundle."""
+    bundle_root = getattr(sys, "_MEIPASS", None)
+    if bundle_root:
+        return Path(bundle_root) / relative_path
+    return Path(__file__).resolve().parent.parent / relative_path
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -28,7 +37,7 @@ class MainWindow(QtWidgets.QMainWindow):
             self.restoreGeometry(geometry)
 
     def _apply_icon(self):
-        icon = Path(__file__).resolve().parent.parent / "assets" / "gist-manager.svg"
+        icon = resource_path("assets/gist-manager.svg")
         if icon.exists():
             self.setWindowIcon(QtGui.QIcon(str(icon)))
 
@@ -72,7 +81,7 @@ class MainWindow(QtWidgets.QMainWindow):
         subtitle.setObjectName("subtitle")
         titles.addWidget(title)
         titles.addWidget(subtitle)
-        badge = QtWidgets.QLabel("v2.0 • by Swir")
+        badge = QtWidgets.QLabel(f"v{APP_VERSION} • by Swir")
         badge.setObjectName("badge")
         hero_row.addLayout(titles)
         hero_row.addStretch(1)
